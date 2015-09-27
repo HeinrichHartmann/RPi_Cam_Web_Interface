@@ -490,6 +490,7 @@ do
   install)
         dialog --title 'Basic Install message' --colors --infobox "\Zb\Z1Notice!\Zn Configure you settings after install using \Zb\Z1\"configure\"\Zn option." 5 43 ; sleep 4
         sudo killall raspimjpeg
+        sudo apt-get update
         sudo apt-get install -y apache2 php5 php5-cli libapache2-mod-php5 gpac motion zip
 
         fn_rpicamdir
